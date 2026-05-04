@@ -1,0 +1,20 @@
+# 临时文件
+.DS_Store
+*.log
+
+# 个人隐私文件（简历示例）
+# resume-*.md 这些是示例文件，包含个人信息，建议删除或替换
+resume-*.md
+
+# HTML输出示例
+html/*.html
+
+# 本地配置文件
+.claude/
+
+# 面试记录数据
+interviews/
+interview-review-outputs/
+
+# 依赖
+node_modules/
