@@ -5,16 +5,22 @@
 # 个人隐私文件（简历示例）
 # resume-*.md 这些是示例文件，包含个人信息，建议删除或替换
 resume-*.md
+!skills/resume-coach.md
 
 # HTML输出示例
 html/*.html
 
 # 本地配置文件
 .claude/
+.cc-connect/
 
-# 面试记录数据
+# 个人职业档案与经历
+MyCareer/
+
+# 面试与投递记录数据
 interviews/
 interview-review-outputs/
+output/
 
 # 依赖
 node_modules/
