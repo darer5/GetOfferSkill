@@ -5,13 +5,13 @@ description: |
   当用户粘贴/上传简历，要求"优化简历"、"简历诊断"、"简历打分"、"简历润色"、"简历改写"、"ATS优化"、"根据JD生成简历"、"JD匹配简历"、"写简历"、"修改简历"时触发。
   只提供 JD 且只要求岗位分析时不要触发本 skill，应交给 jd-analysis；如果同时有 JD 和简历/职业档案，本 skill 负责生成最终简历。
 version: 4.0.0
-author: VibeGetOffer
+author: GetOfferSkill
 tags:
   - 简历优化
   - 职业发展
   - JD匹配
   - ATS优化
-  - VibeGetOffer
+  - GetOfferSkill
 ---
 
 # AI 简历金牌教练
@@ -34,7 +34,7 @@ tags:
 使用本 skill：
 - 用户要求简历体检、诊断、打分、润色、改写、ATS 优化。
 - 用户提供 JD 并要求生成/优化匹配该 JD 的简历。
-- VibeGetOffer 完整流程的阶段 2。
+- GetOfferSkill 完整流程的阶段 2。
 
 不要使用本 skill：
 - 用户只提供 JD 并要求分析岗位；先用 `jd-analysis`。
@@ -74,7 +74,7 @@ tags:
 6. `output/**/*-resume.md`，作为历史投递简历参考；优先读取最近、且 `result.md` 或 `meta.yaml` 显示结果较好的项目。
 7. 必要时查看 `output/**/*-JD.md`，复用同类岗位关键词。
 
-不要读取 `MyCareer/output/**/*-resume.md`，该路径不是 VibeGetOffer 标准路径。
+不要读取 `MyCareer/output/**/*-resume.md`，该路径不是 GetOfferSkill 标准路径。
 
 质量判断：
 - 如果用户提供了简历，即使 MyCareer 为空也可以继续诊断或改写。
@@ -221,7 +221,7 @@ tags:
 
 ## 项目保存规则
 
-当用户要求保存简历、确认投递，或 VibeGetOffer 进入项目创建阶段：
+当用户要求保存简历、确认投递，或 GetOfferSkill 进入项目创建阶段：
 1. 目标目录：`output/[公司名]-[岗位名]-[YYYYMMDD]/`。
 2. 简历文件：`[公司名]-[岗位名]-resume.md`。
 3. 如果 JD 文件已存在，复用同一目录；否则根据公司名和岗位名创建目录。

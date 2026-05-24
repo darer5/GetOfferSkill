@@ -5,12 +5,12 @@ description: |
   当用户要求"分析 JD"、"看这个岗位"、"根据 JD 准备面试"、"这个岗位适合我吗"、"岗位匹配度"时触发。
   只看简历、优化简历、生成简历时不要触发本 skill，应交给 resume-coach；如果用户同时提供 JD 和简历，先完成 JD 分析，再把结构化结果交给 resume-coach。
 version: 4.0.0
-author: VibeGetOffer
+author: GetOfferSkill
 tags:
   - JD分析
   - 岗位匹配
   - 面试准备
-  - VibeGetOffer
+  - GetOfferSkill
 ---
 
 # JD 面试准备分析器
@@ -22,7 +22,7 @@ tags:
 使用本 skill：
 - 用户提供 JD 文本、招聘链接、岗位截图，要求分析岗位或匹配度。
 - 用户要求基于某个岗位准备面试、预测面试题、判断岗位核心要求。
-- VibeGetOffer 完整流程的阶段 1。
+- GetOfferSkill 完整流程的阶段 1。
 
 不要使用本 skill：
 - 用户只要求看简历、优化简历、生成简历、ATS 优化；交给 `resume-coach`。
@@ -140,7 +140,7 @@ tags:
 
 ## 项目交接规则
 
-当用户确认投递、要求保存 JD，或 VibeGetOffer 进入项目创建阶段：
+当用户确认投递、要求保存 JD，或 GetOfferSkill 进入项目创建阶段：
 1. 目标目录：`output/[公司名]-[岗位名]-[YYYYMMDD]/`。
 2. JD 文件：`[公司名]-[岗位名]-JD.md`。
 3. 如果目录不存在，创建目录并初始化 `meta.yaml`、`interview-practice/`、`interview-review/`、`result.md`。

@@ -1,8 +1,8 @@
-# VibeGetOffer 工作流程指南
+# GetOfferSkill 工作流程指南
 
 ## 概述
 
-VibeGetOffer 提供三种工作模式：完整流程、单独调用、断点续传。
+GetOfferSkill 提供三种工作模式：完整流程、单独调用、断点续传。
 
 ## 模式 A：完整流程（4 阶段）
 
